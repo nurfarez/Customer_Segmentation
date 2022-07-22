@@ -42,6 +42,32 @@ The purpose of this project is to predict the outcome of the campaign in persuad
 
 ## Summary of Results
 
+-Data Loading
+The dataset is imported using os and pandas libraries with CSV file.
+
+-Data Inspection  
+There 18 columns at the beginning of the data set and two columns: id and prev_campaign_outcome were dropped due to the unnessary to the model
+
+In order to get better insights of the dataset: Categorical Columns were plotted against Target:term_deposit_subscribed
+
+For the term_deposit_subscribed, we can see that there is class imbalance issue  
+![comparison_chart_term_deposit_subscribed](https://user-images.githubusercontent.com/109565405/180430428-45e29683-dc25-48e2-9008-b5c3613b37f0.png)
+
+  
+comparison plot of marital vs term_deposit_subscribed
+![comparison_chart_marital](https://user-images.githubusercontent.com/109565405/180430602-3c2158c4-bd44-49a6-883b-9493b8a9085f.png)
+comparison plot of education vs term_deposit_subscribed  
+![comparison_chart_education](https://user-images.githubusercontent.com/109565405/180430789-d6971614-edfe-4ba3-94e0-3a92b4362132.png)
+
+We can conclude that married couple tends to have higher chance of no putting deposit in banks maybe due to many life commitments or low education level. 
+While,clients who have secondary education have higher possibilties in put deposit in banks.   
+  
+- Data Cleaning  
+There are Nan values and were treat with KNNImputer,  no duplicates data and no outliers removed due to the data conditions.
+
+-Features Selection
+Cramers V,  and Logistic Regression were used for the features selection.
+  
 ![image](https://user-images.githubusercontent.com/109565405/180421388-beb7d964-c1be-49da-aa26-d7d00bdddc9b.png)
 
 The best features used for this model are:
@@ -57,6 +83,11 @@ and The target for this model: term_deposit_subscribed
 
 ![image](https://user-images.githubusercontent.com/109565405/180422352-df504b01-09e3-4d52-9729-9e836f4c95e5.png)
 ![model_result](https://user-images.githubusercontent.com/109565405/180422384-55ab11cf-1617-4d97-8d03-9ef69ab34662.PNG)
+
+-Data Preprocessing
+X,features was scaled using MinMaxScaler and  saved in pickle file.
+y,target column was encoded with OneHotEncoder and saved in pickle file.
+X, y splitted using train_test_plit. 
 
 Model was trained with batch_size = 128, and epochs = 50 and stop at 14 epoch with the used of early_callback
 The model achieve accuracy at 90% and loss 23.48%.
