@@ -22,13 +22,11 @@ July 2022
 
 </a></h4>
 
-## Summary and Motivation
+## ABOUT THE PROJECT
 
-The purpose of this project is to predict the outcome of the campaign in persuade more clients to deposit money into the bank based on customers' demographic and last campaign details etc. This project was classified under classification problem and been solved by the deep learning approach.
+Bank's revenue is mainly decrement of the deposition of money into the bank by the clients.The bank decided to conduct marketing campaigns to persuade more 
+clients to deposit money into the bank. The main purpose of this project is to predict the outcome of the campaign in persuade more clients to deposit money into the bank based on customers' demographic and last campaign details etc. This project was classified under classification problem and been solved by the deep learning approach.The dataset contains  customer demographic and marketing campaign details.
 
-- Research Questions
-1. What are the accuracy of the model 
-2. What are the best features used for this classification model
 
 ## Libraries that been used
 
@@ -42,30 +40,27 @@ The purpose of this project is to predict the outcome of the campaign in persuad
 
 ## Summary of Results
 
--Data Loading
+- Data Loading
 The dataset is imported using os and pandas libraries with CSV file.
 
--Data Inspection  
-There 18 columns at the beginning of the data set and two columns: id and prev_campaign_outcome were dropped due to the unnessary to the model
+- Data Inspection 
+There are 18 columns at the beginning of the dataset and two columns: id and prev_campaign_outcome were dropped due to the unnecessary to the model
 
 In order to get better insights of the dataset: Categorical Columns were plotted against Target:term_deposit_subscribed
 
 For the term_deposit_subscribed, we can see that there is class imbalance issue  
 ![comparison_chart_term_deposit_subscribed](https://user-images.githubusercontent.com/109565405/180430428-45e29683-dc25-48e2-9008-b5c3613b37f0.png)
 
-  
-comparison plot of marital vs term_deposit_subscribed
-![comparison_chart_marital](https://user-images.githubusercontent.com/109565405/180430602-3c2158c4-bd44-49a6-883b-9493b8a9085f.png)
-comparison plot of education vs term_deposit_subscribed  
+![comparison_chart_marital](https://user-images.githubusercontent.com/109565405/180430602-3c2158c4-bd44-49a6-883b-9493b8a9085f.png)  
 ![comparison_chart_education](https://user-images.githubusercontent.com/109565405/180430789-d6971614-edfe-4ba3-94e0-3a92b4362132.png)
 
-We can conclude that married couple tends to have higher chance of no putting deposit in banks maybe due to many life commitments or low education level. 
+From the chart,married couple tends to have higher chance of no putting deposit in banks maybe due to many life commitments or low education level. 
 While,clients who have secondary education have higher possibilties in put deposit in banks.   
   
 - Data Cleaning  
 There are Nan values and were treat with KNNImputer,  no duplicates data and no outliers removed due to the data conditions.
 
--Features Selection
+- Features Selection
 Cramers V,  and Logistic Regression were used for the features selection.
   
 ![image](https://user-images.githubusercontent.com/109565405/180421388-beb7d964-c1be-49da-aa26-d7d00bdddc9b.png)
@@ -79,13 +74,13 @@ The best features used for this model are:
 6)days_since_prev_campaign_contact 
 7)num_contacts_prev_campaign 
 
-and The target for this model: term_deposit_subscribed 
+and the target for this model: term_deposit_subscribed 
 
 ![image](https://user-images.githubusercontent.com/109565405/180422352-df504b01-09e3-4d52-9729-9e836f4c95e5.png)
 ![model_result](https://user-images.githubusercontent.com/109565405/180422384-55ab11cf-1617-4d97-8d03-9ef69ab34662.PNG)
 
--Data Preprocessing
-X,features was scaled using MinMaxScaler and  saved in pickle file.
+- Data Preprocessing
+X,features was scaled using MinMaxScaler and saved in pickle file.
 y,target column was encoded with OneHotEncoder and saved in pickle file.
 X, y splitted using train_test_plit. 
 
@@ -103,7 +98,7 @@ The model of epoch accuracy and loss also displayed at tensorboard
 The Model architecture were plotted in this project
 ![model](https://user-images.githubusercontent.com/109565405/180423635-2544d8df-b753-4e5e-96fb-449c5b93312b.png)
 
--Model Evaluation
+- Model Evaluation
 
 ![model_result](https://user-images.githubusercontent.com/109565405/180420180-7b4e9564-da45-4443-896e-a6f72f174aa1.PNG)
 ![confusion_matrix_display](https://user-images.githubusercontent.com/109565405/180420221-9c350209-ca49-477c-b234-24a3e4b7155a.png)
