@@ -84,7 +84,7 @@ X,features was scaled using MinMaxScaler and saved in pickle file.
 y,target column was encoded with OneHotEncoder and saved in pickle file.
 X, y splitted using train_test_plit. 
 
-Model was trained with batch_size = 128, and epochs = 50 and stop at 14 epoch with the used of early_callback
+Model was trained with nodes= 128, and epochs = 50 and stop at 14 epoch with the used of early_callback
 The model achieve accuracy at 90% and loss 23.48%.
  
 Training and validation loss and accuracy were plotted.
@@ -105,7 +105,6 @@ The Model architecture were plotted in this project
 
 The results of this analysis: The accuracy obtained for this classification model is around 0.9 where about 8285 clients is correctly predicted tends to not deposit
 money into banks based on some factors such as demographic profile and etc.
-
 
 ## Credits
 Thanks to [HackerEarth HackLive: Customer Segmentation | Kaggle](https://www.kaggle.com/datasets/kunalgupta2616/hackerearth-customer-segmentation-hackathon). for contributions of customer segmentation dataset and my lecturer, Dr Warren for his sharing
