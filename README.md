@@ -76,15 +76,16 @@ The best features used for this model are:
 
 and the target for this model: term_deposit_subscribed 
 
-![image](https://user-images.githubusercontent.com/109565405/180422352-df504b01-09e3-4d52-9729-9e836f4c95e5.png)
-![model_result](https://user-images.githubusercontent.com/109565405/180422384-55ab11cf-1617-4d97-8d03-9ef69ab34662.PNG)
-
 - Data Preprocessing
 X,features was scaled using MinMaxScaler and saved in pickle file.
 y,target column was encoded with OneHotEncoder and saved in pickle file.
-X, y splitted using train_test_plit. 
+X, y was splitted by train and test
 
-Model was trained with nodes= 128, and epochs = 50 and stop at 14 epoch with the used of early_callback
+- Model Development
+![image](https://user-images.githubusercontent.com/109565405/180422352-df504b01-09e3-4d52-9729-9e836f4c95e5.png)
+![model_result](https://user-images.githubusercontent.com/109565405/180422384-55ab11cf-1617-4d97-8d03-9ef69ab34662.PNG)
+
+Model was trained with node= 128, and epochs = 50 and stop at 14 epoch with the used of early_callback
 The model achieve accuracy at 90% and loss 23.48%.
  
 Training and validation loss and accuracy were plotted.
