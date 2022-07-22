@@ -59,7 +59,7 @@ and The target for this model: term_deposit_subscribed
 ![model_result](https://user-images.githubusercontent.com/109565405/180422384-55ab11cf-1617-4d97-8d03-9ef69ab34662.PNG)
 
 Model was trained with batch_size = 128, and epochs = 50 and stop at 14 epoch with the used of early_callback
-The model achieved accuracy at 90% and loss 23.48%.
+The model achieve accuracy at 90% and loss 23.48%.
  
 Training and validation loss and accuracy were plotted.
 ![epoch_acc](https://user-images.githubusercontent.com/109565405/180422446-b3c6fa29-29aa-4cff-ab46-d43bcf6e8a4a.png)
@@ -68,6 +68,9 @@ Training and validation loss and accuracy were plotted.
 The model of epoch accuracy and loss also displayed at tensorboard
 ![epoch_acc_tensor](https://user-images.githubusercontent.com/109565405/180422603-72be2253-386f-4515-ba48-d0d0e449e80c.PNG)
 ![epoch_loss_tensor](https://user-images.githubusercontent.com/109565405/180422624-af1924f6-2375-43fd-8b5a-a21bcd1982c2.PNG)
+
+The Model architecture were plotted in this project
+![model](https://user-images.githubusercontent.com/109565405/180423635-2544d8df-b753-4e5e-96fb-449c5b93312b.png)
 
 -Model Evaluation
 
