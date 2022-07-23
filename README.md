@@ -46,7 +46,7 @@ The purpose of this project is to predict the outcome of the campaign in persuad
 The dataset is imported using os and pandas libraries with CSV file.
 
 -Data Inspection  
-There 18 columns at the beginning of the data set and two columns: id and prev_campaign_outcome were dropped due to the unnessary to the model
+There 18 columns at the beginning of the data set and two columns: id and prev_campaign_outcome were dropped due to the unnecessary to the model
 
 In order to get better insights of the dataset: Categorical Columns were plotted against Target:term_deposit_subscribed
 
