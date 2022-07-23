@@ -91,8 +91,7 @@ df.groupby(['term_deposit_subscribed','marital']).agg({'term_deposit_subscribed'
 df.groupby(['term_deposit_subscribed','education']).agg({'term_deposit_subscribed':'count'}).plot(kind='bar')
 df.groupby(['term_deposit_subscribed','job_type']).agg({'term_deposit_subscribed':'count'}).plot(kind='bar')
 
-#married couple tends to have the highest possibilities not to subscribe on term deposit 
-# while, by education: people who got secondary has the highest chance of getting term deposit or not.
+#married couple tends to have the highest possibilities to subscribe on term deposit since they have the highest education,secondary 
 
 # the better way to plot target against  categorical columns by comparison graph 
 
