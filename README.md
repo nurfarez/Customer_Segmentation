@@ -59,8 +59,7 @@ comparison plot of marital vs term_deposit_subscribed
 comparison plot of education vs term_deposit_subscribed  
 ![comparison_chart_education](https://user-images.githubusercontent.com/109565405/180430789-d6971614-edfe-4ba3-94e0-3a92b4362132.png)
 
-We can conclude that married couple tends to have higher chance of no putting deposit in banks maybe due to many life commitments or low education level. 
-While,clients who have secondary education have higher possibilties in put deposit in banks.   
+We can conclude that married couple tends to have higher chance of putting deposit in banks maybe they have higher education ,secondary level. 
   
 - Data Cleaning  
 There are Nan values and were treat with KNNImputer,  no duplicates data and no outliers removed due to the data conditions.
@@ -108,8 +107,8 @@ The Model architecture were plotted in this project
 ![model_result](https://user-images.githubusercontent.com/109565405/180420180-7b4e9564-da45-4443-896e-a6f72f174aa1.PNG)
 ![confusion_matrix_display](https://user-images.githubusercontent.com/109565405/180420221-9c350209-ca49-477c-b234-24a3e4b7155a.png)
 
-The results of this analysis: The accuracy obtained for this classification model is around 0.9 where about 8285 clients is correctly predicted tends to not deposit
-money into banks based on some factors such as demographic profile and etc.
+The results of this analysis: The accuracy obtained for this classification model is around 0.9 where about 8285 clients is correctly predicted tends to deposit
+money into banks .
 
 
 ## Credits
